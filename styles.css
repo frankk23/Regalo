@@ -1,0 +1,197 @@
+/* Estilo global */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #000000, #1c1c1c, #000000); /* Fondo oscuro con gradiente */
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenedor de estrellas */
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none; /* Evita que las estrellas interfieran con la interacción de la página */
+}
+
+/* Cada estrella */
+.star {
+    position: absolute;
+    width: 2px;  /* Tamaño ajustado para que se vean mejor */
+    height: 2px;
+    background: rgba(255, 255, 255, 0.8); /* Color blanco con algo de transparencia */
+    border-radius: 50%;
+    animation: twinkling 2s infinite ease-in-out alternate;
+    opacity: 0.5;
+}
+
+/* Animación de parpadeo */
+@keyframes twinkling {
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.width-phone {
+    padding: 0 2rem;
+}
+
+/* Aquí añadimos muchas más estrellas con posiciones y tiempos de parpadeo aleatorios */
+.star:nth-child(1) { top: 5%; left: 15%; animation-delay: 0s; }
+.star:nth-child(2) { top: 10%; left: 25%; animation-delay: 0.5s; }
+.star:nth-child(3) { top: 15%; left: 70%; animation-delay: 1s; }
+.star:nth-child(4) { top: 20%; left: 80%; animation-delay: 1.5s; }
+.star:nth-child(5) { top: 25%; left: 10%; animation-delay: 2s; }
+.star:nth-child(6) { top: 30%; left: 50%; animation-delay: 2.5s; }
+.star:nth-child(7) { top: 35%; left: 40%; animation-delay: 3s; }
+.star:nth-child(8) { top: 40%; left: 20%; animation-delay: 3.5s; }
+.star:nth-child(9) { top: 45%; left: 60%; animation-delay: 4s; }
+.star:nth-child(10) { top: 50%; left: 85%; animation-delay: 4.5s; }
+.star:nth-child(11) { top: 55%; left: 15%; animation-delay: 5s; }
+.star:nth-child(12) { top: 60%; left: 30%; animation-delay: 5.5s; }
+.star:nth-child(13) { top: 65%; left: 75%; animation-delay: 6s; }
+.star:nth-child(14) { top: 70%; left: 90%; animation-delay: 6.5s; }
+.star:nth-child(15) { top: 75%; left: 25%; animation-delay: 7s; }
+.star:nth-child(16) { top: 80%; left: 60%; animation-delay: 7.5s; }
+.star:nth-child(17) { top: 85%; left: 50%; animation-delay: 8s; }
+.star:nth-child(18) { top: 90%; left: 40%; animation-delay: 8.5s; }
+.star:nth-child(19) { top: 95%; left: 80%; animation-delay: 9s; }
+.star:nth-child(20) { top: 5%; left: 35%; animation-delay: 9.5s; }
+.star:nth-child(21) { top: 10%; left: 45%; animation-delay: 10s; }
+.star:nth-child(22) { top: 15%; left: 55%; animation-delay: 10.5s; }
+.star:nth-child(23) { top: 20%; left: 65%; animation-delay: 11s; }
+.star:nth-child(24) { top: 25%; left: 75%; animation-delay: 11.5s; }
+.star:nth-child(25) { top: 30%; left: 85%; animation-delay: 12s; }
+.star:nth-child(26) { top: 35%; left: 95%; animation-delay: 12.5s; }
+.star:nth-child(27) { top: 40%; left: 5%; animation-delay: 13s; }
+.star:nth-child(28) { top: 45%; left: 15%; animation-delay: 13.5s; }
+.star:nth-child(29) { top: 50%; left: 25%; animation-delay: 14s; }
+.star:nth-child(30) { top: 55%; left: 35%; animation-delay: 14.5s; }
+.star:nth-child(31) { top: 60%; left: 45%; animation-delay: 15s; }
+.star:nth-child(32) { top: 65%; left: 55%; animation-delay: 15.5s; }
+.star:nth-child(33) { top: 70%; left: 65%; animation-delay: 16s; }
+.star:nth-child(34) { top: 75%; left: 75%; animation-delay: 16.5s; }
+.star:nth-child(35) { top: 80%; left: 85%; animation-delay: 17s; }
+.star:nth-child(36) { top: 85%; left: 95%; animation-delay: 17.5s; }
+.star:nth-child(37) { top: 90%; left: 5%; animation-delay: 18s; }
+.star:nth-child(38) { top: 95%; left: 15%; animation-delay: 18.5s; }
+.star:nth-child(39) { top: 5%; left: 25%; animation-delay: 19s; }
+.star:nth-child(40) { top: 10%; left: 35%; animation-delay: 19.5s; }
+.star:nth-child(41) { top: 15%; left: 45%; animation-delay: 20s; }
+.star:nth-child(42) { top: 20%; left: 55%; animation-delay: 20.5s; }
+.star:nth-child(43) { top: 25%; left: 65%; animation-delay: 21s; }
+.star:nth-child(44) { top: 30%; left: 75%; animation-delay: 21.5s; }
+.star:nth-child(45) { top: 35%; left: 85%; animation-delay: 22s; }
+.star:nth-child(46) { top: 40%; left: 95%; animation-delay: 22.5s; }
+.star:nth-child(47) { top: 45%; left: 5%; animation-delay: 23s; }
+.star:nth-child(48) { top: 50%; left: 15%; animation-delay: 23.5s; }
+.star:nth-child(49) { top: 55%; left: 25%; animation-delay: 24s; }
+.star:nth-child(50) { top: 60%; left: 35%; animation-delay: 24.5s; }
+
+/* Contenedor */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+
+/* Animación de entrada para las letras */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo de las letras individuales */
+.letter {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.1); /* Texto inicial oscuro */
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    display: inline-block;
+    cursor: default;
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: calc(0.2s * var(--index)); /* Retraso entre letras */
+}
+
+/* Efecto de iluminación al pasar el mouse */
+.letter:hover {
+    color: #ff69b4; /* Cambia el color al pasar el mouse */
+    text-shadow: 0 0 15px #ff69b4, 0 0 30px #ff69b4, 0 0 45px #ff69b4;
+    cursor: default;
+}
+
+/* Efecto de transición suave en el texto */
+p, footer {
+    transition: color 0.3s ease-in-out;
+}
+
+p:hover, footer:hover {
+    color: #ff85c4; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Botón */
+button {
+    padding: 12px 24px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #ff69b4; /* Color rosa brillante */
+    border: none;
+    border-radius: 50px; /* Bordes redondeados */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4); /* Sombra suave */
+}
+
+/* Efecto hover con cambio de color y más sombra */
+button:hover {
+    background-color: #ff85c4; /* Color rosa más suave */
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.6); /* Sombra más grande */
+    transform: scale(1.05); /* Pequeño agrandamiento al pasar el mouse */
+    animation: heartbeat 0.6s ease-in-out;
+}
+
+/* Efecto de latido en el botón */
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+/* Animación de Flores - Oculta hasta que se presione el botón */
+.flor {
+    display: none; /* Oculto por defecto */
+    text-align: center;
+}
+
+/* Mostrar la animación de flores cuando sea activada */
+.flor.active {
+    display: block;
+}
+
+
+
